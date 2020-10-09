@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Calculadora Salario Liquido</string>
+    <string name="app_title">Calculadora de Salário Líquido</string>
+    <string name="input1">Salário Bruto R$</string>
+    <string name="input2">Número Dependentes</string>
+    <string name="input3">Outros Descontos R$</string>
+    <string name="phsalary">0,00</string>
+    <string name="phdependents">0</string>
+    <string name="phdescontos">0,00</string>
+    <string name="btnname">Calcular</string>
+    <string name="btnback">Voltar</string>
+    <string name="results_title">Resultado</string>
+    <string name="inss">INSS R$</string>
+    <string name="irrf">IRRF R$</string>
+    <string name="salario_liquido_text">Salário Líquido</string>
+    <string name="descontos_text">Descontos</string>
+
+
+</resources>
