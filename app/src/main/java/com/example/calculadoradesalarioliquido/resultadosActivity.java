@@ -67,15 +67,16 @@ public class resultadosActivity extends AppCompatActivity {
         }
 
         int count = 0;
-        for (int i = text.length - 3; i > 0; i--) {
+        for (int i = text.length - 3; i > 1; i--) {
             if (count == 3) {
                 texto.add(i,".");
                 count = 0;
             }
             count++;
+
         }
         // Passing an array list of Strings to String
-        result = TextUtils.join("", texto);
+        result = TextUtils.join("",texto);
         // Another way of doing it
         //result = texto.stream().map(Object::toString)
         //                          .collect(Collectors.joining(""));

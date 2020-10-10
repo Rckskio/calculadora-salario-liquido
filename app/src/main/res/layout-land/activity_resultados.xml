@@ -33,10 +33,10 @@
 
     <TextView
         android:id="@+id/salario_bruto_value"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
+        android:layout_width="191dp"
+        android:layout_height="36dp"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="12dp"
         android:text="@string/phsalary"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -67,8 +67,8 @@
 
     <TextView
         android:id="@+id/inss_value"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
+        android:layout_width="187dp"
+        android:layout_height="42dp"
         android:layout_marginEnd="16dp"
         android:text="@string/phsalary"
         android:textColor="@color/red"
@@ -131,9 +131,8 @@
 
     <TextView
         android:id="@+id/salario_liquido_value"
-        android:layout_width="100dp"
+        android:layout_width="201dp"
         android:layout_height="30dp"
-        android:layout_marginTop="5dp"
         android:layout_marginEnd="16dp"
         android:text="@string/phsalary"
         android:textSize="24sp"
