@@ -26,9 +26,9 @@ public class resultadosActivity extends AppCompatActivity {
         double descontos = salary.getDouble("descontos");
 
         String setSalarioBruto = formatMoney(salarioBruto);
-        String setInss = formatMoney(inss);
-        String setIrrf = formatMoney(irrf);
-        String setOutrosDescontos = formatMoney(outrosDescontos);
+        String setInss = inss > 0 ? "-" + formatMoney(inss) : "" + formatMoney(inss);
+        String setIrrf = irrf > 0 ? "-" + formatMoney(irrf) : "" + formatMoney(irrf);
+        String setOutrosDescontos = outrosDescontos > 0 ? "-"+ formatMoney(outrosDescontos) : "" + formatMoney(outrosDescontos);
         String setSalarioLiquido = formatMoney(salarioLiquido);
         String setDescontos = String.format("%.2f %%", descontos);
 

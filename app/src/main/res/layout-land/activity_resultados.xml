@@ -33,13 +33,13 @@
 
     <TextView
         android:id="@+id/salario_bruto_value"
-        android:layout_width="191dp"
-        android:layout_height="36dp"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="12dp"
         android:text="@string/phsalary"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/salario_liquido_text"
         app:layout_constraintTop_toBottomOf="@+id/Title" />
 
     <Button
@@ -67,13 +67,13 @@
 
     <TextView
         android:id="@+id/inss_value"
-        android:layout_width="187dp"
-        android:layout_height="42dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
         android:text="@string/phsalary"
         android:textColor="@color/red"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/salario_liquido_text"
         app:layout_constraintTop_toBottomOf="@+id/salario_bruto_value" />
 
     <TextView
@@ -88,13 +88,13 @@
 
     <TextView
         android:id="@+id/irrf_value"
-        android:layout_width="100dp"
+        android:layout_width="200dp"
         android:layout_height="30dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="40dp"
         android:text="@string/phsalary"
         android:textColor="@color/red"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/salario_liquido_text"
         app:layout_constraintTop_toBottomOf="@+id/inss_value" />
 
     <TextView
@@ -109,14 +109,14 @@
 
     <TextView
         android:id="@+id/outros_descontos_value"
-        android:layout_width="100dp"
+        android:layout_width="200dp"
         android:layout_height="30dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="40dp"
         android:text="@string/phsalary"
         android:textColor="@color/red"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/irrf_value" />
+        app:layout_constraintStart_toEndOf="@+id/salario_liquido_text"
+        app:layout_constraintTop_toBottomOf="@+id/irrf_value" />
 
     <TextView
         android:id="@+id/salario_liquido_text"
@@ -131,12 +131,13 @@
 
     <TextView
         android:id="@+id/salario_liquido_value"
-        android:layout_width="201dp"
+        android:layout_width="250dp"
         android:layout_height="30dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
         android:text="@string/phsalary"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/salario_liquido_text"
         app:layout_constraintTop_toBottomOf="@+id/outros_descontos_value" />
 
     <TextView
@@ -153,10 +154,10 @@
         android:id="@+id/descontos_value"
         android:layout_width="100dp"
         android:layout_height="30dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="40dp"
         android:text="@string/phdependents"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/salario_liquido_value" />
+        app:layout_constraintStart_toEndOf="@+id/salario_liquido_text"
+        app:layout_constraintTop_toBottomOf="@+id/salario_liquido_value" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
