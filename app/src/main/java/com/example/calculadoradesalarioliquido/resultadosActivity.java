@@ -2,9 +2,13 @@ package com.example.calculadoradesalarioliquido;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.Build;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 public class resultadosActivity extends AppCompatActivity {
 
@@ -21,11 +25,11 @@ public class resultadosActivity extends AppCompatActivity {
         double salarioLiquido = salary.getDouble("salarioLiquido");
         double descontos = salary.getDouble("descontos");
 
-        String setSalarioBruto = String.format("%.2f", salarioBruto);
-        String setInss = String.format("%.2f", inss);
-        String setIrrf = String.format("%.2f", irrf);
-        String setOutrosDescontos = String.format("%.2f", outrosDescontos);
-        String setSalarioLiquido = String.format("%.2f", salarioLiquido);
+        String setSalarioBruto = formatMoney(salarioBruto);
+        String setInss = formatMoney(inss);
+        String setIrrf = formatMoney(irrf);
+        String setOutrosDescontos = formatMoney(outrosDescontos);
+        String setSalarioLiquido = formatMoney(salarioLiquido);
         String setDescontos = String.format("%.2f %%", descontos);
 
         TextView salario_bruto = (TextView)findViewById(R.id.salario_bruto_value);
@@ -49,5 +53,33 @@ public class resultadosActivity extends AppCompatActivity {
 
     public void retornar(View view) {
         finish();
+    }
+
+    private String formatMoney(double money) {
+        String result = String.format("%.2f", money);
+        if (result.length() < 7) {
+            return result;
+        }
+        String[] text = result.split("");
+        ArrayList<String> texto = new ArrayList<>();
+        for (int i = 0; i < text.length; i++) {
+            texto.add(text[i]);
+        }
+
+        int count = 0;
+        for (int i = text.length - 3; i > 0; i--) {
+            if (count == 3) {
+                texto.add(i,".");
+                count = 0;
+            }
+            count++;
+        }
+        // Passing an array list of Strings to String
+        result = TextUtils.join("", texto);
+        // Another way of doing it
+        //result = texto.stream().map(Object::toString)
+        //                          .collect(Collectors.joining(""));
+        return result;
+
     }
 }

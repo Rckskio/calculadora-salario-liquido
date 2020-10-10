@@ -82,7 +82,7 @@
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/phdependents"
-        android:inputType="numberDecimal"
+        android:inputType="numberSigned"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/dependentes"
         app:layout_constraintTop_toBottomOf="@+id/input_salario" />
@@ -96,7 +96,7 @@
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/phdescontos"
-        android:inputType="numberSigned"
+        android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/descontos"
         app:layout_constraintTop_toBottomOf="@+id/input_dependentes" />

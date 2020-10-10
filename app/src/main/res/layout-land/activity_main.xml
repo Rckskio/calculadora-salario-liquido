@@ -59,7 +59,8 @@
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/dependentes"
-        app:layout_constraintTop_toBottomOf="@+id/title" />
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/descontos"
@@ -78,9 +79,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginEnd="19dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/phdependents"
-        android:inputType="numberDecimal"
+        android:inputType="numberSigned"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/dependentes"
         app:layout_constraintTop_toBottomOf="@+id/input_salario" />
@@ -96,7 +98,8 @@
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/dependentes"
-        app:layout_constraintTop_toBottomOf="@+id/input_dependentes" />
+        app:layout_constraintTop_toBottomOf="@+id/input_dependentes"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/botao_calcular"
