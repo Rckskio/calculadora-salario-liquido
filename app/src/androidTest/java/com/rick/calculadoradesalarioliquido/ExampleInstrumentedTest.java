@@ -1,4 +1,4 @@
-package com.example.calculadoradesalarioliquido;
+package com.rick.calculadoradesalarioliquido;
 
 import android.content.Context;
 

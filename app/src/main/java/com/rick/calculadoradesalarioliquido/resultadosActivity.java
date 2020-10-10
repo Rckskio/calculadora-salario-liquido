@@ -1,8 +1,7 @@
-package com.example.calculadoradesalarioliquido;
+package com.rick.calculadoradesalarioliquido;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;

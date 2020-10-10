@@ -1,4 +1,4 @@
-package com.example.calculadoradesalarioliquido;
+package com.rick.calculadoradesalarioliquido;
 
 import androidx.appcompat.app.AppCompatActivity;
 
